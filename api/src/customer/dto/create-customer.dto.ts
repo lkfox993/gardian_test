@@ -1,4 +1,4 @@
-import { IsDate, IsNotEmpty, IsEmail, IsPhoneNumber } from 'class-validator';
+import { IsDate, IsNotEmpty, IsEmail, IsPhoneNumber, IsNumber } from 'class-validator';
 import { IsObjectId } from 'class-validator-mongo-object-id';
 
 export class CreateCustomerDto {
@@ -15,10 +15,10 @@ export class CreateCustomerDto {
 
     @IsObjectId()
     @IsNotEmpty()
-    slotId: string;
+    slot: string;
 
-    @IsPhoneNumber()
+    @IsNumber()
     @IsNotEmpty()
-    phone: string;
+    phone: number;
 
 }
