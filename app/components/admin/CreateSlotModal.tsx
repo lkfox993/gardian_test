@@ -26,19 +26,6 @@ export const CreateSlotModal: React.FC<ModalProps> = (props) => {
         
         }).catch(console.log)
 
-        // fetch('http://localhost:3000/api/slots',{
-        //     method: 'post',
-        //     body: new URLSearchParams(values)
-        // })
-        // .then(res=> res.json())
-        // .then(() => {
-
-        //     emitter.emit('fetchSlots');
-        //     emitter.emit('setVisible', false);
-            
-        //     message.success('Slot created :)');
-        
-        // }).catch(console.log);
     }
 
     return (
